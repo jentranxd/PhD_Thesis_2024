@@ -1,4 +1,4 @@
-setwd("C:/Users/jentr/OneDrive - UW-Madison/lab things/all_recounted/chemical clustering/Pathway effects limma-voom/")
+setwd("./chemical clustering/Pathway effects limma-voom/")
 
 source("enrichment_application.r")
 
@@ -120,34 +120,11 @@ create_enrichment_plot <- function(selected_term, selected_contrast_patterns) {
 
 # variety of things for the cyclines
 create_enrichment_plot("CL:1517", "cycline") # heme copper terminal oxidase
-create_enrichment_plot("CL:1489", "cycline")
-create_enrichment_plot("CL:912", "cycline")
-create_enrichment_plot("KW-0375", "cycline")
-create_enrichment_plot("GO:0009206", "cycline")
-create_enrichment_plot("CL:1029", "penem")
 
-create_enrichment_plot("CL:113", "cycline")
-create_enrichment_plot("CL:113", c("amikacin", "apramycin", "tobramycin"))
-
-create_enrichment_plot("GO:0015986", "cycline")
-
-create_enrichment_plot("GO:0003922", c("colistin", "polymyxin", "lactoferrin", "meropenem", "ethidium", "acriflavine"))
-
-create_enrichment_plot("CL:1292", c("carvacrol", "thymol"))
-
-create_enrichment_plot("CL:1029", c("doripenem_T2_9 - none_T2_8", "imipenem_T2_3 - none_T2_3", "meropenem_T2_13 - none_T2_13"))
-
-create_enrichment_plot()
-
-create_enrichment_plot("GO:0046654", "trimethoprim")
-
-create_enrichment_plot("GO:0015002", "trimethoprim")
-
-create_enrichment_plot("KW-0235", "floxacin")
 
 enrichment_cheat_sheet <- curated_names %>% rename('locus_tag' = 'AB19606') %>% 
   select(c('locus_tag', 'unique_name')) %>% full_join(enrichments, by = 'locus_tag')
-
+               
 View(enrichment_cheat_sheet)
 
 CL113 <- enrichment_cheat_sheet %>% filter(term == "CL:113") %>% select(unique_name)
