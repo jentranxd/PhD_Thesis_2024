@@ -1,0 +1,183 @@
+sample	batch	shift	timing	experiment	rep	verbose	drug	dose	name for R script
+3AbJT31	7	ACR	T2	tube	1	acriflavine 2 	acriflavine	2	acriflavine_T2_7
+3AbJT32	7	ACR	T2	tube	2	acriflavine 2 	acriflavine	2	acriflavine_T2_7
+2AbJT15	3	ACTD	T2	tube	1	actinomycin D 8 	actinomycinD	8	actinomycinD_T2_3
+2AbJT16	3	ACTD	T2	tube	2	actinomycin D 8 	actinomycinD	8	actinomycinD_T2_3
+1AbJT3	1	AMI	T2	tube	1	amikacin 1.75	amikacin	1.75	amikacin_T2_1
+1AbJT4	1	AMI	T2	tube	2	amikacin 1.75	amikacin	1.75	amikacin_T2_1
+3AbJT17	6	CRV	T2	tube	1	carvacrol 40 	carvacrol	40	carvacrol_T2_6
+3AbJT18	6	CRV	T2	tube	2	carvacrol 40 	carvacrol	40	carvacrol_T2_6
+1AbJT5	1	CEF	T2	tube	1	cefaclor 72	cefaclor	72	cefaclor_T2_1
+1AbJT6	1	CEF	T2	tube	2	cefaclor 72	cefaclor	72	cefaclor_T2_1
+2AbJT17	3	CHX_low	T2	tube	1	chlorhexidine 5 	chlorhexidine	5	chlorhexidine_T2_3
+2AbJT18	3	CHX_low	T2	tube	2	chlorhexidine 5 	chlorhexidine	5	chlorhexidine_T2_3
+3AbJT33	7	CPM	T2	tube	1	chlorpromazine 5 	chlorpromazine	5	chlorpromazine_T2_7
+3AbJT34	7	CPM	T2	tube	2	chlorpromazine 5 	chlorpromazine	5	chlorpromazine_T2_7
+3AbJT27	6	CIP	T2	tube	1	ciprofloxacin 0.1 	ciprofloxacin	0.1	ciprofloxacin_T2_6
+3AbJT28	6	CIP	T2	tube	2	ciprofloxacin 0.1 	ciprofloxacin	0.1	ciprofloxacin_T2_6
+1AbJT21	11	COL	T2	tube	1	colistin 1.25	colistin	1.25	colistin_T2_11
+1AbJT22	11	COL	T2	tube	2	colistin 1.25	colistin	1.25	colistin_T2_11
+2AbJT3	2	DAP	T2	tube	1	daptomycin 100	daptomycin	100	daptomycin_T2_2
+2AbJT4	2	DAP	T2	tube	2	daptomycin 100	daptomycin	100	daptomycin_T2_2
+2AbJT19	3	DCS	T2	tube	1	D-cycloserine 60 	D-cycloserine 	60	D-cycloserine _T2_3
+2AbJT20	3	DCS	T2	tube	2	D-cycloserine 60 	D-cycloserine 	60	D-cycloserine _T2_3
+3AbJT55	13	DMSO	T2	tube	1	DMSO 	DMSO	0.005	DMSO_T2_13
+3AbJT56	13	DMSO	T2	tube	2	DMSO 	DMSO	0.005	DMSO_T2_13
+3AbJT23	6	EDTA	T2	tube	1	EDTA 36.53	EDTA	36.53	EDTA_T2_6
+3AbJT24	6	EDTA	T2	tube	2	EDTA 36.53	EDTA	36.53	EDTA_T2_6
+3AbJT21	6	ETBR	T2	tube	1	ethidium bromide 10 	ethidium bromide	10	ethidium bromide_T2_6
+3AbJT22	6	ETBR	T2	tube	2	ethidium bromide 10 	ethidium bromide	10	ethidium bromide_T2_6
+1AbJT7	1	FOS	T2	tube	1	fosfomycin 32	fosfomycin	32	fosfomycin_T2_1
+1AbJT8	1	FOS	T2	tube	2	fosfomycin 32	fosfomycin	32	fosfomycin_T2_1
+2AbJT21	3	IMI	T2	tube	1	imipenem .05 	imipenem	0.05	imipenem_T2_3
+2AbJT22	3	IMI	T2	tube	2	imipenem .05 	imipenem	0.05	imipenem_T2_3
+3AbJT45	12	LAC	T2	tube	1	lactoferrin 100 	lactoferrin	100	lactoferrin_T2_12
+3AbJT46	12	LAC	T2	tube	2	lactoferrin 100 	lactoferrin	100	lactoferrin_T2_12
+3AbJT19	6	LEV	T2	tube	1	levofloxacin .125 	levofloxacin	0.125	levofloxacin_T2_6
+3AbJT20	6	LEV	T2	tube	2	levofloxacin .125 	levofloxacin	0.125	levofloxacin_T2_6
+1AbJT9	1	MCL	T2	tube	1	mecillinam 25	mecillinam	25	mecillinam_T2_1
+1AbJT10	1	MCL	T2	tube	2	mecillinam 25	mecillinam	25	mecillinam_T2_1
+3AbJT51	13	MERO	T2	tube	1	meropenem 0.15 	meropenem	0.15	meropenem_T2_13
+3AbJT52	13	MERO	T2	tube	2	meropenem 0.15 	meropenem	0.15	meropenem_T2_13
+1AbJT19	11	MIN	T2	tube	1	minocycline 0.03125	minocycline	0.03125	minocycline_T2_11
+1AbJT20	11	MIN	T2	tube	2	minocycline 0.03125	minocycline	0.03125	minocycline_T2_11
+2AbJT27	4	MUP	T2	tube	1	mupirocin 250 	mupirocin	250	mupirocin_T2_4
+2AbJT28	4	MUP	T2	tube	2	mupirocin 250 	mupirocin	250	mupirocin_T2_4
+2AbJT29	4	MYR	T2	tube	1	myricetin 15 	myricetin	15	myricetin_T2_4
+2AbJT30	4	MYR	T2	tube	2	myricetin 15 	myricetin	15	myricetin_T2_4
+2AbJT5	2	NAL	T2	tube	1	nalidixic acid 2	nalidixic_acid	2	nalidixic_acid_T2_2
+2AbJT6	2	NAL	T2	tube	2	nalidixic acid 2	nalidixic_acid	2	nalidixic_acid_T2_2
+1AbJT15	1	EZ	T0	tube	1	t0 no drug	none	0	none_T0_1
+1AbJT16	1	EZ	T0	tube	2	t0 no drug	none	0	none_T0_1
+1AbJT23	11	EZ	T0	tube	1	t0 no drug	none	0	none_T0_11
+1AbJT24	11	EZ	T0	tube	2	t0 no drug	none	0	none_T0_11
+3AbJT43	12	EZ	T0	tube	1	t0 no drug	none	0	none_T0_12
+3AbJT44	12	EZ	T0	tube	2	t0 no drug	none	0	none_T0_12
+3AbJT49	13	EZ	T0	tube	1	t0 no drug	none	0	none_T0_13
+3AbJT50	13	EZ	T0	tube	2	t0 no drug	none	0	none_T0_13
+2AbJT1	2	EZ	T0	tube	1	t0 no drug	none	0	none_T0_2
+2AbJT2	2	EZ	T0	tube	2	t0 no drug	none	0	none_T0_2
+2AbJT13	3	EZ	T0	tube	1	t0 no drug	none	0	none_T0_3
+2AbJT14	3	EZ	T0	tube	2	t0 no drug	none	0	none_T0_3
+2AbJT25	4	EZ	T0	tube	1	t0 no drug	none	0	none_T0_4
+2AbJT26	4	EZ	T0	tube	2	t0 no drug	none	0	none_T0_4
+3AbJT1	5	EZ	T0	tube	1	t0 no drug	none	0	none_T0_5
+3AbJT2	5	EZ	T0	tube	2	t0 no drug	none	0	none_T0_5
+3AbJT15	6	EZ	T0	tube	1	t0 no drug	none	0	none_T0_6
+3AbJT16	6	EZ	T0	tube	2	t0 no drug	none	0	none_T0_6
+3AbJT29	7	EZ	T0	tube	1	t0 no drug	none	0	none_T0_7
+3AbJT30	7	EZ	T0	tube	2	t0 no drug	none	0	none_T0_7
+2AbJT11	1b	no_ab	T2	tube	1	no drug	none	0	none_T2_1b
+2AbJT12	1b	no_ab	T2	tube	2	no drug	none	0	none_T2_1b
+1AbJT1	1a	no_ab	T2	tube	1	no drug	none	0	none_T2_1a
+1AbJT2	1a	no_ab	T2	tube	2	no drug	none	0	none_T2_1a
+1AbJT17	11	no_ab	T2	tube	1	no drug	none	0	none_T2_11
+1AbJT18	11	no_ab	T2	tube	2	no drug	none	0	none_T2_11
+3AbJT47	12	no_ab	T2	tube	1	no drug	none	0	none_T2_12
+3AbJT48	12	no_ab	T2	tube	2	no drug	none	0	none_T2_12
+3AbJT57	13	no_ab	T2	tube	1	no drug	none	0	none_T2_13
+3AbJT58	13	no_ab	T2	tube	2	no drug	none	0	none_T2_13
+2AbJT23	3	no_ab	T2	tube	1	no drug	none	0	none_T2_3
+2AbJT24	3	no_ab	T2	tube	2	no drug	none	0	none_T2_3
+3AbJT13	5	no_ab	T2	tube	1	no drug	none	0	none_T2_5
+3AbJT14	5	no_ab	T2	tube	2	no drug	none	0	none_T2_5
+2AbJT31	4	NOV	T2	tube	1	novobiocin 2.5 	novobiocin	2.5	novobiocin_T2_4
+2AbJT32	4	NOV	T2	tube	2	novobiocin 2.5 	novobiocin	2.5	novobiocin_T2_4
+3AbJT39	7	PRQ	T2	tube	1	paraquat 20 	paraquat	20	paraquat_T2_7
+3AbJT40	7	PRQ	T2	tube	2	paraquat 20 	paraquat	20	paraquat_T2_7
+3AbJT35	7	PNZ	T2	tube	1	phenazine 5 	phenazine	5	phenazine_T2_7
+3AbJT36	7	PNZ	T2	tube	2	phenazine 5 	phenazine	5	phenazine_T2_7
+1AbJT11	1	PMX	T2	tube	1	polymyxin b 1	polymyxin b 	1	polymyxin b _T2_1
+1AbJT12	1	PMX	T2	tube	2	polymyxin b 1	polymyxin b 	1	polymyxin b _T2_1
+3AbJT37	7	PYO	T2	tube	1	pyocyanin 6.25 	pyocyanin	6.25	pyocyanin_T2_7
+3AbJT38	7	PYO	T2	tube	2	pyocyanin 6.25 	pyocyanin	6.25	pyocyanin_T2_7
+3AbJT53	13	RIF	T2	tube	1	rifampicin 1.2 	rifampicin	1.2	rifampicin_T2_13
+3AbJT54	13	RIF	T2	tube	2	rifampicin 1.2 	rifampicin	1.2	rifampicin_T2_13
+3AbJT3	5	RIF	T2	tube	1	rifampicin 1 	rifampicin	1	rifampicin_T2_5
+3AbJT4	5	RIF	T2	tube	2	rifampicin 1 	rifampicin	1	rifampicin_T2_5
+3AbJT9	5	SDS	T2	tube	1	SDS 50 	SDS	50	SDS_T2_5
+3AbJT10	5	SDS	T2	tube	2	SDS 50 	SDS	50	SDS_T2_5
+1AbJT13	1	TET	T2	tube	1	tetracycline 0.5	tetracycline	0.5	tetracycline_T2_1
+1AbJT14	1	TET	T2	tube	2	tetracycline 0.5	tetracycline	0.5	tetracycline_T2_1
+3AbJT25	6	THY	T2	tube	1	thymol 30 	thymol	30	thymol_T2_6
+3AbJT26	6	THY	T2	tube	2	thymol 30 	thymol	30	thymol_T2_6
+2AbJT7	2	TIG	T2	tube	1	tigecycline .03125	tigecycline	0.03125	tigecycline_T2_2
+2AbJT8	2	TIG	T2	tube	2	tigecycline .03125	tigecycline	0.03125	tigecycline_T2_2
+3AbJT5	5	TOB	T2	tube	1	tobramycin 0.4 	tobramycin	0.4	tobramycin_T2_5
+3AbJT6	5	TOB	T2	tube	2	tobramycin 0.4 	tobramycin	0.4	tobramycin_T2_5
+3AbJT11	5	TPEN	T2	tube	1	TPEN 1 	TPEN	1	TPEN_T2_5
+3AbJT12	5	TPEN	T2	tube	2	TPEN 1 	TPEN	1	TPEN_T2_5
+2AbJT9	2	TMP	T2	tube	1	trimethoprim 2	trimethoprim	2	trimethoprim_T2_2
+2AbJT10	2	TMP	T2	tube	2	trimethoprim 2	trimethoprim	2	trimethoprim_T2_2
+3AbJT41	7	TMP-SFM	T2	tube	1	trimethoprim-sulfamethoxazole 5 ; 25 	trimethoprim-sulfamethoxazole	"5,25"	trimethoprim-sulfamethoxazole_T2_7
+3AbJT42	7	TMP-SFM	T2	tube	2	trimethoprim-sulfamethoxazole 5 ; 25 	trimethoprim-sulfamethoxazole	"5,25"	trimethoprim-sulfamethoxazole_T2_7
+3AbJT7	5	VAN	T2	tube	1	vancomycin 5 	vancomycin	5	vancomycin_T2_5
+3AbJT8	5	VAN	T2	tube	2	vancomycin 5 	vancomycin	5	vancomycin_T2_5
+4AbJT1	17	EZ	T0	tube	1	t0 no drug	none	0	none_T0_17
+4AbJT2	17	EZ	T0	tube	2	t0 no drug	none	0	none_T0_17
+4AbJT3	17	DMSO	T2	tube	1	DMSO 1	DMSO	1	DMSO_T2_17
+4AbJT4	17	DMSO	T2	tube	2	DMSO 1	DMSO	1	DMSO_T2_17
+4AbJT5	17	DMSO	T2	tube	1	DMSO 1	DMSO	1	DMSO_T2_17
+4AbJT6	17	DMSO	T2	tube	2	DMSO 1	DMSO	1	DMSO_T2_17
+4AbJT7	17	no_ab	T2	tube	1	no drug	none	0	none_T2_17
+4AbJT8	17	no_ab	T2	tube	2	no drug	none	0	none_T2_17
+4AbJT9	8	EZ	T0	tube	1	t0 no drug	none	0	none_T0_8
+4AbJT10	8	EZ	T0	tube	2	t0 no drug	none	0	none_T0_8
+4AbJT11	8	APR	T2	tube	1	apramycin 7 	apramycin	7	apramycin_T2_8
+4AbJT12	8	APR	T2	tube	2	apramycin 7 	apramycin	7	apramycin_T2_8
+4AbJT13	8	CER	T2	tube	1	cerulenin 7.5 	cerulenin	7.5	cerulenin_T2_8
+4AbJT14	8	CER	T2	tube	2	cerulenin 7.5 	cerulenin	7.5	cerulenin_T2_8
+4AbJT15	8	TCL	T2	tube	1	triclosan .175 	triclosan	0.175	triclosan_T2_8
+4AbJT16	8	TCL	T2	tube	2	triclosan .175 	triclosan	0.175	triclosan_T2_8
+4AbJT17	8	TAZ-PIP	T2	tube	1	tazobactam-piperacillin 0.5 ; 4 	tazobactam-piperacillin	"0.5, 4"	tazobactam-piperacillin_T2_8
+4AbJT18	8	TAZ-PIP	T2	tube	2	tazobactam-piperacillin 0.5 ; 4 	tazobactam-piperacillin	"0.5, 4"	tazobactam-piperacillin_T2_8
+4AbJT19	8	no_ab	T2	tube	1	no drug	none	0	none_T2_8
+4AbJT20	8	no_ab	T2	tube	2	no drug	none	0	none_T2_8
+4AbJT21	9	EZ	T0	tube	1	t0 no drug	none	0	none_T0_9
+4AbJT22	9	EZ	T0	tube	2	t0 no drug	none	0	none_T0_9
+4AbJT23	9	DOR	T2	tube	1	doripenem 0.05 	doripenem	0.05	doripenem_T2_9
+4AbJT24	9	DOR	T2	tube	2	doripenem 0.05 	doripenem	0.05	doripenem_T2_9
+4AbJT25	9	LYS	T2	tube	1	lysozyme 50 	lysozyme	50	lysozyme_T2_9
+4AbJT26	9	LYS	T2	tube	2	lysozyme 50 	lysozyme	50	lysozyme_T2_9
+4AbJT27	9	CuS	T2	tube	1	copper (II) sulfate 100 	copper_II_sulfate	100	copper_II_sulfate_T2_9
+4AbJT28	9	CuS	T2	tube	2	copper (II) sulfate 100 	copper_II_sulfate	100	copper_II_sulfate_T2_9
+4AbJT29	9	CCCP	T2	tube	1	CCCP 12.5 	CCCP	12.5	CCCP_T2_9
+4AbJT30	9	CCCP	T2	tube	2	CCCP 12.5 	CCCP	12.5	CCCP_T2_9
+4AbJT31	10	EZ	T0	tube	1	t0 no drug	none	0	none_T0_10
+4AbJT32	10	EZ	T0	tube	2	t0 no drug	none	0	none_T0_10
+4AbJT33	10	COL	T2	tube	1	colistin 0.5 	colistin	0.5	colistin_T2_10
+4AbJT34	10	COL	T2	tube	2	colistin 0.5 	colistin	0.5	colistin_T2_10
+4AbJT35	10	NiCl	T2	tube	1	Nickel (II) chloride 400 	Nickel_II_chloride	400	Nickel_II_chloride_T2_10
+4AbJT36	10	NiCl	T2	tube	2	Nickel (II) chloride 400 	Nickel_II_chloride	400	Nickel_II_chloride_T2_10
+4AbJT37	10	no_ab	T2	tube	1	no drug	none	0	none_T2_10
+4AbJT38	10	no_ab	T2	tube	2	no drug	none	0	none_T2_10
+4AbJT39	14	EZ	T0	tube	1	t0 no drug	none	0	none_T0_14
+4AbJT40	14	EZ	T0	tube	2	t0 no drug	none	0	none_T0_14
+4AbJT41	14	AZI	T2	tube	1	azithromycin 0.2 	azithromycin	0.2	azithromycin_T2_14
+4AbJT42	14	AZI	T2	tube	2	azithromycin 0.2 	azithromycin	0.2	azithromycin_T2_14
+4AbJT43	14	AZT	T2	tube	1	aztreonam 1 	aztreonam	1	aztreonam_T2_14
+4AbJT44	14	AZT	T2	tube	2	aztreonam 1 	aztreonam	1	aztreonam_T2_14
+4AbJT45	14	CHX_high	T2	tube	1	chlorhexidine 6 	chlorhexidine	6	chlorhexidine_T2_14
+4AbJT46	14	CHX_high	T2	tube	2	chlorhexidine 6 	chlorhexidine	6	chlorhexidine_T2_14
+4AbJT47	14	IND	T2	tube	1	indole 200 	indole	200	indole_T2_14
+4AbJT48	14	IND	T2	tube	2	indole 200 	indole	200	indole_T2_14
+4AbJT49	14	ISO	T2	tube	1	isoniazid 100 	isoniazid	100	isoniazid_T2_14
+4AbJT50	14	ISO	T2	tube	2	isoniazid 100 	isoniazid	100	isoniazid_T2_14
+4AbJT51	14	no_ab	T2	tube	1	no drug	none	0	none_T2_14
+4AbJT52	14	no_ab	T2	tube	2	no drug	none	0	none_T2_14
+4AbJT53	15	EZ	T0	tube	1	t0 no drug	none	0	none_T0_15
+4AbJT54	15	EZ	T0	tube	2	t0 no drug	none	0	none_T0_15
+4AbJT55	15	PMB	T2	tube	1	polymyxin b 0.5 	polymyxin b	0.5	polymyxin b_T2_15
+4AbJT56	15	PMB	T2	tube	2	polymyxin b 0.5 	polymyxin b	0.5	polymyxin b_T2_15
+4AbJT57	15	MIN	T2	tube	1	minocycline 0.005 	minocycline	0.005	minocycline_T2_15
+4AbJT58	15	MIN	T2	tube	2	minocycline 0.005 	minocycline	0.005	minocycline_T2_15
+4AbJT59	15	no_ab	T2	tube	1	no drug	none	0	none_T2_15
+4AbJT60	15	no_ab	T2	tube	2	no drug	none	0	none_T2_15
+4AbJT61	16	EZ	T0	tube	1	t0 no drug	none	0	none_T0_16
+4AbJT62	16	EZ	T0	tube	2	t0 no drug	none	0	none_T0_16
+4AbJT63	16	ZnS	T2	tube	1	Zinc sulfate 250	Zinc sulfate	250	Zinc sulfate_T2_16
+4AbJT64	16	ZnS	T2	tube	2	Zinc sulfate 250	Zinc sulfate	250	Zinc sulfate_T2_16
+4AbJT65	16	LL37	T2	tube	1	LL-37 4 	LL_37	4	LL_37_T2_16
+4AbJT66	16	LL37	T2	tube	2	LL-37 4 	LL_37	4	LL_37_T2_16
+4AbJT67	16	no_ab	T2	tube	1	no drug	none	0	none_T2_16
+4AbJT68	16	no_ab	T2	tube	2	no drug	none	0	none_T2_16
