@@ -1,0 +1,149 @@
+---
+title: 'Appendix B: growth inhibition'
+author: "Jennifer Tran"
+date: "2024-07-11"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load required packages and import data
+
+```{r}
+require("pacman")
+
+p_load(data.table, dplyr, tidyr, purrr, DescTools)
+
+```
+
+
+I typically pre-format data from the Excel output of our Tecan MPlex.
+Here, I've appended about 26 plates worth of growth curves together for ease
+of importing into R. You can view a glimpse of the data here
+
+```{r echo=FALSE}
+setwd("C:/Users/jentr/OneDrive - UW-Madison/lab things/data/growth curves")
+
+df <- fread("antibiotic_inhibition_data.csv", header=TRUE)
+
+```
+
+```{r, echo=FALSE}
+glimpse(head(df[,1:10], n=10))
+
+```
+
+...but it requires some extra data wrangling as a result 
+
+```{r}
+split_df_by_plate <- function(df) {
+  plate_numbers <- unique(gsub("(_.*)|(_time)", "", names(df)))
+  plate_dfs <- map(plate_numbers, function(plate) {
+    df %>%
+      select(matches(paste0(plate, "_"))) %>%
+      rename_with(~ gsub(paste0(plate, "_"), "", .), -matches(paste0(plate, "_time"))) %>%
+      rename(time = matches(paste0(plate, "_time")))
+  })
+  names(plate_dfs) <- plate_numbers
+  plate_dfs
+}
+
+```
+
+## Function for subtracting off background
+
+Subtract off background absorbance values from media only
+Media only controls here also include the antibiotic concentration as some
+antibiotics actually have additional noise at OD600/A600.
+In two cases, media only controls got contaminated towards the end of the 
+growth curve. In those cases, controls from the antibiotic concentration one 
+higher or lower were used.
+
+
+```{r}
+subtract_blanks <- function(plate_df) {
+  blank_cols <- grep("blank", names(plate_df), value = TRUE)
+  plate_df <- plate_df %>%
+    mutate(across(-time, ~ . - rowMeans(across(all_of(blank_cols)))))
+  plate_df <- plate_df %>%
+    select(-matches("blank"))
+  plate_df
+}
+```
+
+## Function for calculating area under the curve
+
+This uses the base AUC() function from the pracma package.
+It defaults to the trapezoidal method.
+
+```{r}
+calculate_auc <- function(plate_df) {
+  plate_df %>%
+    pivot_longer(-time, names_to = c("antibiotic", "concentration", "replicate"), names_sep = "_") %>%
+    group_by(antibiotic, concentration, replicate) %>%
+    summarise(auc = AUC(time, value), .groups = 'drop')
+}
+```
+
+## Function for calculating percent inhibition
+
+Each plate contains a replicate control with no antibiotic.
+Nearly every plate actually use a replicate control in the same column as the
+corresponding antibiotic sample.
+
+
+Take the average for each antibiotic concentration across the three replicates.
+The standard deviation can give an idea of how much the growth curves varied
+between replicates.
+
+```{r}
+calculate_percent_inhibition <- function(auc_df) {
+  control_auc <- auc_df %>% filter(concentration == 0) %>% select(antibiotic, replicate, auc)
+  auc_df <- auc_df %>%
+    left_join(control_auc, by = c("antibiotic", "replicate"), suffix = c("", "_control")) %>%
+    mutate(percent_inhibition = 100 * (1 - (auc / auc_control))) %>%
+    select(-auc_control)
+  auc_df
+}
+
+summarize_percent_inhibition <- function(inhibition_df, plate_number) {
+  inhibition_df %>%
+    group_by(antibiotic, concentration) %>%
+    summarise(
+      mean_percent_inhibition = mean(percent_inhibition),
+      sd_percent_inhibition = sd(percent_inhibition),
+      .groups = 'drop'
+    ) %>%
+    mutate(plate_number = plate_number)
+}
+```
+
+## Process
+```{r}
+process_growth_curves <- function(df) {
+  plate_dfs <- split_df_by_plate(df)
+  inhibition_summaries <- map2_dfr(plate_dfs, names(plate_dfs), function(plate_df, plate_number) {
+    plate_df <- subtract_blanks(plate_df)
+    auc_df <- calculate_auc(plate_df)
+    inhibition_df <- calculate_percent_inhibition(auc_df)
+    summarize_percent_inhibition(inhibition_df, plate_number)
+  })
+  return(inhibition_summaries)
+}
+
+result_df <- process_growth_curves(df)
+
+```
+
+```{r echo=FALSE}
+glimpse(result_df)
+```
+
+I like to clean it up by removing the no antibiotic controls.
+They're all zero percent inhibition because of how inhibition was calculated.
+
+```{r}
+cleaned_results <- result_df %>% filter(concentration != 0)
+```
