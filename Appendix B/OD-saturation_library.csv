@@ -1,0 +1,22 @@
+Media,OD600 at 20 hours (1:10 dilution),Replicate
+EZ RDM + 20 mM succinate,0.23,A
+EZ RDM + 20 mM succinate,0.234,B
+EZ RDM + 20 mM succinate,0.24,C
+EZ RDM + 30 mM succinate,0.286,A
+EZ RDM + 30 mM succinate,0.24,B
+EZ RDM + 30 mM succinate,0.289,C
+EZ RDM + 40 mM succinate,0.347,A
+EZ RDM + 40 mM succinate,0.358,B
+EZ RDM + 40 mM succinate,0.326,C
+EZ RDM + 50 mM succinate,0.149,A
+EZ RDM + 50 mM succinate,0.357,B
+EZ RDM + 50 mM succinate,0.351,C
+EZ RDM + 60 mM succinate,0.337,A
+EZ RDM + 60 mM succinate,0.352,B
+EZ RDM + 60 mM succinate,0.121,C
+LB (pre-mixed),0.298,A
+LB (pre-mixed),0.331,B
+LB (pre-mixed),0.32,C
+LB (from components),0.339,A
+LB (from components),0.332,B
+LB (from components),0.374,C
